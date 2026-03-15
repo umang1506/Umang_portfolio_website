@@ -385,9 +385,13 @@ button, input, textarea {
 
 .projects__img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
+  object-position: center center;
+  flex-shrink: 0;
+  display: block;
 }
+
 
 .projects__data {
   padding: 1.5rem;
