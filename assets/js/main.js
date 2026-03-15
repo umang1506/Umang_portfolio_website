@@ -39,8 +39,9 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER PROJECTS ===============*/
 let swiperProjects = new Swiper(".projects__container", {
     loop: true,
-    spaceBetween: 24,
     grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 24,
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -49,11 +50,22 @@ let swiperProjects = new Swiper(".projects__container", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
     breakpoints: {
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+        },
+        900: {
+          slidesPerView: 1.15,
+          spaceBetween: 28,
+          centeredSlides: true,
+        },
         1200: {
           slidesPerView: 2,
-          spaceBetween: -56,
+          spaceBetween: 28,
+          centeredSlides: false,
         },
     },
 });
@@ -93,7 +105,7 @@ sr.reveal(`.home__images`, {origin: 'bottom'})
 sr.reveal(`.about__data, .projects__container`, {origin: 'left'})
 sr.reveal(`.experience__content`, {origin: 'right'})
 sr.reveal(`.about__skills`, {delay: 600})
-sr.reveal(`.projects__card`, {interval: 100})
+// Note: individual card reveal removed – conflicts with Swiper's slide visibility management
 sr.reveal(`.experience__item`, {interval: 100})
 sr.reveal(`.contact__card`, {interval: 100})
 sr.reveal(`.contact__form`, {delay: 700})

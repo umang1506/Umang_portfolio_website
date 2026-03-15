@@ -363,8 +363,14 @@ button, input, textarea {
 
 /*=============== PROJECTS ===============*/
 .projects__container {
-  overflow: visible;
+  overflow: hidden;
+  padding-bottom: 3rem; /* space for pagination dots */
 }
+
+.projects__wrapper {
+  overflow: hidden;
+}
+
 
 .projects__card {
   background-color: hsla(240, 8%, 6%, .6);
