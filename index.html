@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Umang Patel - Portfolio</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Umang<span>.</span></a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#home" class="nav__link active-link">Home</a></li>
+               <li><a href="#about" class="nav__link">About</a></li>
+               <li><a href="#projects" class="nav__link">Projects</a></li>
+               <li><a href="#experience" class="nav__link">Experience</a></li>
+               <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content grid">
+               <div class="home__data">
+                  <h3 class="home__greeting">Hello, I'm</h3>
+                  <h1 class="home__name">Umang <br> Patel</h1>
+                  <h2 class="home__profession">Computer Engineering Student</h2>
+                  <p class="home__description">
+                     Motivated undergraduate with hands-on experience in AI-driven systems, computer vision, and scalable web platforms.
+                  </p>
+
+                  <div class="home__buttons">
+                     <a href="#contact" class="button">Contact Me</a>
+                     <a href="assets/pdf/resume.pdf" download="Umang_Patel_Resume.pdf" class="button button--ghost">Download CV</a>
+                  </div>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="home__social-link">
+                     <i class="ri-linkedin-box-fill"></i>
+                  </a>
+                  <a href="https://github.com/umang1506" target="_blank" class="home__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__images">
+               <div class="home__blob">
+                  <img src="assets/img/home-perfil.png" alt="Umang Patel" class="home__img">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title"><span>About</span> Me</h2>
+               <p class="about__description">
+                  I am a passionate <b>Computer Engineering</b> student at SVIT with a strong focus on <b>AI, Machine Learning, and Robotics</b>. 
+                  Ranked nationally as a Runner-Up at <b>Smart India Hackathon</b> and a Grand Finale Finalist at <b>Robofest 5.0</b>. 
+                  I enjoy solving real-world problems through technology.
+               </p>
+
+               <div class="about__skills">
+                  <h3 class="about__subtitle">Technical Skills</h3>
+                  <div class="about__skills-list grid">
+                     <div class="about__skills-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <h4>Languages</h4>
+                           <p>Python, Java, C, JS, SQL</p>
+                        </div>
+                     </div>
+                     <div class="about__skills-item">
+                        <i class="ri-window-line"></i>
+                        <div>
+                           <h4>Web Technologies</h4>
+                           <p>React.js, HTML5, CSS</p>
+                        </div>
+                     </div>
+                     <div class="about__skills-item">
+                        <i class="ri-brain-line"></i>
+                        <div>
+                           <h4>AI/ML & Tools</h4>
+                           <p>TensorFlow, OpenCV, Git</p>
+                        </div>
+                     </div>
+                     <div class="about__skills-item">
+                        <i class="ri-database-2-line"></i>
+                        <div>
+                           <h4>Backend & DB</h4>
+                           <p>Supabase, Firebase</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title">Recent <span>Projects</span></h2>
+         
+         <div class="projects__container container swiper">
+            <div class="swiper-wrapper">
+               <!-- Project 1 -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?q=80&w=800&auto=format&fit=crop" alt="Dance Recognition" class="projects__img">
+                  <div class="projects__data">
+                     <h3 class="projects__title">Dance Form Recognition</h3>
+                     <p class="projects__description">
+                        AI/ML model using MediaPipe & Flask to recognize Indian dance forms with 90% accuracy. SIH Runner-Up.
+                     </p>
+                     <div class="projects__tech">
+                        <span>Python</span><span>Mediapipe</span><span>Flask</span>
+                     </div>
+                     <a href="https://github.com/sihsmasher-2025/HastaGuru" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 2 -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="DayFlow HRMS" class="projects__img">
+                  <div class="projects__data">
+                     <h3 class="projects__title">DayFlow HRMS</h3>
+                     <p class="projects__description">
+                        Full-stack HR management system with attendance, payroll, and performance tracking.
+                     </p>
+                     <div class="projects__tech">
+                        <span>React.js</span><span>Supabase</span><span>Vite</span>
+                     </div>
+                     <a href="https://github.com/umang1506/odoo_HRMs" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 3 -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop" alt="Trash Collector" class="projects__img">
+                  <div class="projects__data">
+                     <h3 class="projects__title">Patent: Water Trash Collector</h3>
+                     <p class="projects__description">
+                        IoT-enabled robot designed to collect trash from water bodies using a conveyor belt system. Robofest 5.0 Grand Finale Finalist.
+                     </p>
+                     <div class="projects__tech">
+                        <span>Robotics</span><span>IoT</span><span>Embedded</span><span>Patent Pending</span>
+                     </div>
+                     <a href="#" class="projects__button">
+                        View Details <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 4 -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Food Delivery" class="projects__img">
+                  <div class="projects__data">
+                     <h3 class="projects__title">Food Delivery App</h3>
+                     <p class="projects__description">
+                        Full-featured food delivery platform with cart and role-based authentication.
+                     </p>
+                     <div class="projects__tech">
+                        <span>Web Dev</span><span>Auth</span>
+                     </div>
+                     <a href="https://github.com/umang1506/panda_food" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 5 -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=800&auto=format&fit=crop" alt="Edu Haven" class="projects__img">
+                  <div class="projects__data">
+                     <h3 class="projects__title">Edu Haven</h3>
+                     <p class="projects__description">
+                        Education platform providing exam insights and student-college interactions.
+                     </p>
+                     <div class="projects__tech">
+                        <span>Platform</span><span>Education</span>
+                     </div>
+                     <a href="#" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Swiper navigation -->
+            <div class="swiper-button-next">
+               <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+
+      <!--==================== EXPERIENCE & EDUCATION ====================-->
+      <section class="experience section" id="experience">
+         <h2 class="section__title">Experience & <span>Education</span></h2>
+
+         <div class="experience__container container grid">
+            <div class="experience__content">
+               <h3 class="experience__subtitle">Education</h3>
+               <div class="experience__list grid">
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">B.E. Computer Engineering</h4>
+                        <p class="experience__institution">SVIT, Vasad | 2023–2027</p>
+                        <span class="experience__grade">CGPA: 9.17</span>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">12th PCM</h4>
+                        <p class="experience__institution">Phoenix School | Percentile: 84</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">10th Standard</h4>
+                        <p class="experience__institution">Phoenix School | Percentile: 98.5</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="experience__content">
+               <h3 class="experience__subtitle">Achievements</h3>
+               <div class="experience__list grid">
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Runner-Up - SIH</h4>
+                        <p class="experience__description">Smart India Hackathon (National Level)</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Robofest 5.0 Finalist</h4>
+                        <p class="experience__description">Top 13 Teams in India - Robotics Competition</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="experience__container container grid" style="margin-top: 4rem;">
+            <div class="experience__content">
+               <h3 class="experience__subtitle">Certifications</h3>
+               <div class="experience__list grid">
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Data Structure & Algorithms</h4>
+                        <p class="experience__description">Udemy C++ Masterclass</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Python Programming</h4>
+                        <p class="experience__description">BITS Advanced Python Programming</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Cloud Computing</h4>
+                        <p class="experience__description">NPTEL / Top Technologies Certification</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container container grid">
+            <div class="contact__data">
+               <h2 class="section__title">Let's <span>Talk</span></h2>
+               <p class="contact__description">
+                  I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+               </p>
+
+               <div class="contact__info grid">
+                  <div class="contact__card">
+                     <i class="ri-mail-line"></i>
+                     <h3 class="contact__card-title">Email</h3>
+                     <p class="contact__card-data">umangpatel2415@gmail.com</p>
+                  </div>
+
+                  <div class="contact__card">
+                     <i class="ri-phone-line"></i>
+                     <h3 class="contact__card-title">Phone</h3>
+                     <p class="contact__card-data">+91 7574885744</p>
+                  </div>
+
+                  <div class="contact__card">
+                     <i class="ri-map-pin-line"></i>
+                     <h3 class="contact__card-title">Location</h3>
+                     <p class="contact__card-data">Vadodara, Gujarat, India</p>
+                  </div>
+               </div>
+            </div>
+
+            <form action="" class="contact__form grid">
+               <div class="contact__group">
+                  <input type="text" placeholder="Name" class="contact__input">
+                  <input type="email" placeholder="Email" class="contact__input">
+               </div>
+               <textarea placeholder="Message" class="contact__input contact__area"></textarea>
+               <button class="button">Send Message</button>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content">
+            <a href="#" class="footer__logo">Umang Patel</a>
+            <p class="footer__description">
+               Building the future with AI and Code.
+            </p>
+         </div>
+
+         <div class="footer__social">
+            <a href="https://github.com/umang1506" target="_blank" class="footer__social-link"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+         </div>
+
+         <p class="footer__copy">
+            &#169; 2025 Umang Patel. All Rights Reserved.
+         </p>
+      </div>
+   </footer>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
