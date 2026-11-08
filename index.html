@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Umang Patel - AI/ML Developer & Computer Engineering undergraduate building practical computer vision models, agentic AI workflows, and full-stack web platforms.">
 
    <!--=============== FAVICON ===============-->
    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -16,7 +17,7 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>Umang Patel - Portfolio</title>
+   <title>Umang Patel | AI/ML Developer & Computer Engineer</title>
 </head>
 <body>
    <!--==================== HEADER ====================-->
@@ -54,30 +55,33 @@
                <div class="home__data">
                   <h3 class="home__greeting">Hello, I'm</h3>
                   <h1 class="home__name">Umang <br> Patel</h1>
-                  <h2 class="home__profession">Computer Engineering Student</h2>
+                  <h2 class="home__profession">AI/ML Developer</h2>
                   <p class="home__description">
-                     Motivated undergraduate with hands-on experience in AI-driven systems, computer vision, and scalable web platforms.
+                     Computer Engineering undergraduate building practical computer vision models, agentic AI workflows, and full-stack web tools. National Runner-Up at Smart India Hackathon and Robofest 5.0 Grand Finale Finalist.
                   </p>
 
                   <div class="home__buttons">
                      <a href="#contact" class="button">Contact Me</a>
-                     <a href="assets/pdf/resume.pdf" download="Umang_Patel_Resume.pdf" class="button button--ghost">Download CV</a>
+                     <a href="assets/pdf/resume.pdf" onclick="generateResumePDF(); return false;" download="Umang_Patel_Resume.pdf" class="button button--ghost"><i class="ri-download-2-line"></i> Download CV</a>
                   </div>
                </div>
 
                <div class="home__social">
-                  <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="home__social-link">
+                  <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="home__social-link" title="LinkedIn">
                      <i class="ri-linkedin-box-fill"></i>
                   </a>
-                  <a href="https://github.com/umang1506" target="_blank" class="home__social-link">
+                  <a href="https://github.com/umang1506" target="_blank" class="home__social-link" title="GitHub">
                      <i class="ri-github-fill"></i>
+                  </a>
+                  <a href="mailto:umangpatel2415@gmail.com" class="home__social-link" title="Email">
+                     <i class="ri-mail-fill"></i>
                   </a>
                </div>
             </div>
 
             <div class="home__images">
                <div class="home__blob">
-                  <img src="assets/img/home-perfil.png" alt="Umang Patel" class="home__img">
+                  <img src="assets/img/home-perfil.png" alt="Umang Patel - AI/ML Developer" class="home__img">
                </div>
             </div>
          </div>
@@ -89,10 +93,17 @@
             <div class="about__data">
                <h2 class="section__title"><span>About</span> Me</h2>
                <p class="about__description">
-                  I am a passionate <b>Computer Engineering</b> student at SVIT with a strong focus on <b>AI, Machine Learning, and Robotics</b>. 
-                  Ranked nationally as a Runner-Up at <b>Smart India Hackathon</b> and a Grand Finale Finalist at <b>Robofest 5.0</b>. 
-                  I enjoy solving real-world problems through technology.
+                  Computer Engineering undergraduate building practical <b>computer vision models</b>, <b>agentic AI workflows</b>, and <b>full-stack web tools</b>. 
+                  National Runner-Up at <b>Smart India Hackathon</b> and Grand Finale Finalist at <b>Robofest 5.0</b>. 
+                  Experienced in taking machine learning pipelines from dataset collection and model training to production API deployment using Python, React, and cloud backends.
                </p>
+
+               <div class="about__domains">
+                  <span class="about__domain-tag"><i class="ri-eye-line"></i> Computer Vision</span>
+                  <span class="about__domain-tag"><i class="ri-scan-line"></i> Real-Time Pose Estimation</span>
+                  <span class="about__domain-tag"><i class="ri-git-merge-line"></i> Workflow Automation</span>
+                  <span class="about__domain-tag"><i class="ri-cpu-line"></i> Agentic AI Systems</span>
+               </div>
 
                <div class="about__skills">
                   <h3 class="about__subtitle">Technical Skills</h3>
@@ -101,28 +112,28 @@
                         <i class="ri-code-s-slash-line"></i>
                         <div>
                            <h4>Languages</h4>
-                           <p>Python, Java, C, JS, SQL</p>
-                        </div>
-                     </div>
-                     <div class="about__skills-item">
-                        <i class="ri-window-line"></i>
-                        <div>
-                           <h4>Web Technologies</h4>
-                           <p>React.js, HTML5, CSS</p>
+                           <p>Python, Core Java, C, SQL</p>
                         </div>
                      </div>
                      <div class="about__skills-item">
                         <i class="ri-brain-line"></i>
                         <div>
-                           <h4>AI/ML & Tools</h4>
-                           <p>TensorFlow, OpenCV, Git</p>
+                           <h4>AI & Machine Learning</h4>
+                           <p>TensorFlow, OpenCV, MediaPipe, LangGraph, LLM Prompt Chains</p>
                         </div>
                      </div>
                      <div class="about__skills-item">
-                        <i class="ri-database-2-line"></i>
+                        <i class="ri-window-line"></i>
                         <div>
-                           <h4>Backend & DB</h4>
-                           <p>Supabase, Firebase</p>
+                           <h4>Web & Backend</h4>
+                           <p>React.js, FastAPI, Node.js, Express.js, Supabase, Firebase</p>
+                        </div>
+                     </div>
+                     <div class="about__skills-item">
+                        <i class="ri-tools-line"></i>
+                        <div>
+                           <h4>Tools & DevOps</h4>
+                           <p>Git, Docker, n8n</p>
                         </div>
                      </div>
                   </div>
@@ -133,94 +144,99 @@
 
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
-         <h2 class="section__title">Recent <span>Projects</span></h2>
+         <h2 class="section__title">Key <span>Projects</span></h2>
          
          <div class="projects__container container swiper">
             <div class="swiper-wrapper">
-               <!-- Project 1 -->
-                <article class="projects__card swiper-slide">
-                   <img src="assets/img/proj-dance.jpg" alt="Indian Dance Form Classification - SIH Runner-Up" class="projects__img">
-                   <div class="projects__data">
-                      <h3 class="projects__title">Indian Dance Form Classification</h3>
-                      <p class="projects__description">
-                         <b>SIH Runner-Up:</b> Real-time classification using MediaPipe with <b>94.7% confidence</b>. Features skeletal tracking and pose analysis.
-                      </p>
-                      <div class="projects__tech">
-                         <span>Python</span><span>MediaPipe</span><span>Flask</span><span>AI/ML</span>
-                      </div>
-                      <a href="https://github.com/sihsmasher-2025/HastaGuru" target="_blank" class="projects__button">
-                         View Project <i class="ri-arrow-right-up-line"></i>
-                      </a>
-                   </div>
-                </article>
+               <!-- Project 1: SIH Mudra Detection -->
+               <article class="projects__card swiper-slide">
+                  <img src="assets/img/proj-dance.jpg" alt="Indian Classical Dance Form Mudra Detection - SIH Runner-Up" class="projects__img">
+                  <div class="projects__data">
+                     <span class="projects__badge">SIH National Runner-Up</span>
+                     <h3 class="projects__title">Indian Classical Dance Form Mudra Detection</h3>
+                     <p class="projects__description">
+                        Trained a machine learning model for mudra detection using joint angles from live camera streams or uploaded videos. Trained on <b>25,000 images</b> from a Bharatanatyam scholar repository across single & double-hand mudras, normalizing 63 coordinates via Random Forest with <b>90% accuracy</b> (reaching 94.7% confidence in live video).
+                     </p>
+                     <div class="projects__tech">
+                        <span>Python</span><span>MediaPipe</span><span>Flask</span><span>OpenCV</span><span>TensorFlow</span>
+                     </div>
+                     <a href="https://github.com/sihsmasher-2025/HastaGuru" target="_blank" class="projects__button">
+                        View Repository <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-               <!-- Project 2 -->
-                <article class="projects__card swiper-slide">
-                   <img src="assets/img/proj-hrms.jpg" alt="DayFlow HRMS - Odoo Hackathon" class="projects__img">
-                   <div class="projects__data">
-                      <h3 class="projects__title">Odoo Hackathon: DayFlow HRMS</h3>
-                      <p class="projects__description">
-                         <b>Secure User Authentication:</b> Enterprise-ready platform including <b>Attendance, Payroll, and Employee</b> management modules.
-                      </p>
-                      <div class="projects__tech">
-                         <span>React.js</span><span>Supabase</span><span>Vite</span><span>Odoo</span>
-                      </div>
-                      <a href="https://github.com/umang1506/odoo_HRMs" target="_blank" class="projects__button">
-                         View Project <i class="ri-arrow-right-up-line"></i>
-                      </a>
-                   </div>
-                </article>
+               <!-- Project 2: AI Healthcare Receptionist -->
+               <article class="projects__card swiper-slide">
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop" alt="AI Healthcare Receptionist" class="projects__img">
+                  <div class="projects__data">
+                     <span class="projects__badge">IBM AI Internship Capstone</span>
+                     <h3 class="projects__title">AI Healthcare Receptionist</h3>
+                     <p class="projects__description">
+                        Built an interactive patient intake application that screens symptoms and intelligently directs patients to General or Emergency Ward (e.g. oxygen level &lt; 90%). Connected front-end kiosk to backend <b>Gemini API</b> for symptom diagnosis and automated alerts with <b>n8n and PostgreSQL</b>, cutting simulated processing time by 50%.
+                     </p>
+                     <div class="projects__tech">
+                        <span>React.js</span><span>Python</span><span>FastAPI</span><span>LangGraph</span><span>Gemini API</span><span>n8n</span><span>PostgreSQL</span>
+                     </div>
+                     <a href="https://github.com/umang1506" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-               <!-- Project 3 -->
-                <article class="projects__card swiper-slide">
-                   <img src="assets/img/proj-robot.jpg" alt="Robofest 5.0 - Water Trash Collector Robot" class="projects__img">
-                   <div class="projects__data">
-                      <h3 class="projects__title">Robofest 5.0: Water Trash Collector</h3>
-                      <p class="projects__description">
-                         <b>IoT-Enabled:</b> Patent-pending robot with <b>ultrasonic arrays</b> and conveyor belt system for automated water body cleanup.
-                      </p>
-                      <div class="projects__tech">
-                         <span>Robotics</span><span>IoT</span><span>Embedded</span><span>Patent Pending</span>
-                      </div>
-                      <a href="#" onclick="generateRobofestPDF(); return false;" class="projects__button">
-                         Download Spec PDF <i class="ri-file-download-line"></i>
-                      </a>
-                   </div>
-                </article>
+               <!-- Project 3: Explain This – AI Document Decoder -->
+               <article class="projects__card swiper-slide">
+                  <img src="assets/img/proj-explain.jpg" alt="Explain This - AI Document Decoder" class="projects__img">
+                  <div class="projects__data">
+                     <span class="projects__badge">Independent AI Project</span>
+                     <h3 class="projects__title">Explain This – AI Document Decoder</h3>
+                     <p class="projects__description">
+                        Developed an intelligent document decoder that translates complex legal contracts, loan agreements, and medical reports into plain language. Integrated <b>Gemini API</b> backend to process scanned paperwork across <b>English, Gujarati, and Marathi</b> with high OCR accuracy and an automated clause scanner to detect unfavorable terms; deployed on Google Cloud Run.
+                     </p>
+                     <div class="projects__tech">
+                        <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>Gemini API</span><span>Tesseract.js</span><span>Google Cloud Run</span>
+                     </div>
+                     <a href="https://github.com/umang1506" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-               <!-- Project 4 -->
-                <article class="projects__card swiper-slide">
-                   <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=800&auto=format&fit=crop" alt="Food Delivery Application" class="projects__img">
-                   <div class="projects__data">
-                      <h3 class="projects__title">Food Delivery: Role-Based System</h3>
-                      <p class="projects__description">
-                         Features <b>Admin/User</b> authentication and an <b>Order Lifecycle Tracker</b> for real-time delivery status updates.
-                      </p>
-                      <div class="projects__tech">
-                         <span>Web Dev</span><span>Auth</span><span>Firebase</span>
-                      </div>
-                      <a href="https://github.com/umang1506/panda_food" target="_blank" class="projects__button">
-                         View Project <i class="ri-arrow-right-up-line"></i>
-                      </a>
-                   </div>
-                </article>
+               <!-- Project 4: Robofest 5.0 Robot -->
+               <article class="projects__card swiper-slide">
+                  <img src="assets/img/proj-robot.jpg" alt="Robofest 5.0 - Autonomous Water Trash Collector Robot" class="projects__img">
+                  <div class="projects__data">
+                     <span class="projects__badge">Robofest 5.0 Grand Finale Finalist</span>
+                     <h3 class="projects__title">Autonomous Water Surface Cleaning Robot</h3>
+                     <p class="projects__description">
+                        Designed and field-tested an autonomous water surface cleaning robot equipped with conveyor belts and motor controllers to collect floating waste from lakes and reservoirs. Selected for the Grand Finale of Robofest 5.0 (Top 13 teams nationally).
+                     </p>
+                     <div class="projects__tech">
+                        <span>Robotics</span><span>IoT Sensors</span><span>Embedded Systems</span><span>Motor Control</span>
+                     </div>
+                     <a href="#" onclick="generateRobofestPDF(); return false;" class="projects__button">
+                        Download Spec PDF <i class="ri-file-download-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-               <!-- Project 5 -->
-                <article class="projects__card swiper-slide">
-                   <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Edu Haven Education Platform" class="projects__img">
-                   <div class="projects__data">
-                      <h3 class="projects__title">Edu Haven: Student Knowledge Platform</h3>
-                      <p class="projects__description">
-                         <b>Peer Discussion:</b> A Stack Overflow/X-like interface for exam insights, Q&A, and student-college interactions.
-                      </p>
-                      <div class="projects__tech">
-                         <span>Platform</span><span>Education</span><span>Next.js</span>
-                      </div>
-                      <a href="https://github.com/umang1506/De_Edu_Have" target="_blank" class="projects__button">
-                         View Project <i class="ri-arrow-right-up-line"></i>
-                      </a>
-                   </div>
-                </article>
+               <!-- Project 5: Odoo Hackathon POS -->
+               <article class="projects__card swiper-slide">
+                  <img src="assets/img/proj-hrms.jpg" alt="Café POS & Live Kitchen Tracking - Odoo Hackathon" class="projects__img">
+                  <div class="projects__data">
+                     <span class="projects__badge">Odoo Hackathon Finalist</span>
+                     <h3 class="projects__title">Café POS & Live Order Tracking System</h3>
+                     <p class="projects__description">
+                        Designed a full-featured café point-of-sale platform featuring automated live tracking from chef to customer and dynamic bill settlement supporting multi-category food ordering and inventory status.
+                     </p>
+                     <div class="projects__tech">
+                        <span>React.js</span><span>Node.js</span><span>Supabase</span><span>Vite</span><span>Odoo</span>
+                     </div>
+                     <a href="https://github.com/umang1506/odoo_HRMs" target="_blank" class="projects__button">
+                        View Project <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+               </article>
             </div>
 
             <!-- Swiper navigation -->
@@ -238,79 +254,120 @@
       <section class="experience section" id="experience">
          <h2 class="section__title">Experience & <span>Education</span></h2>
 
+         <!-- Block 1: Internship Experience & Education -->
          <div class="experience__container container grid">
             <div class="experience__content">
-               <h3 class="experience__subtitle">Education</h3>
+               <h3 class="experience__subtitle"><i class="ri-briefcase-4-line"></i> Internship Experience</h3>
                <div class="experience__list grid">
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">B.E. Computer Engineering</h4>
-                        <p class="experience__institution">SVIT, Vasad | 2023–2027</p>
+                        <h4 class="experience__title">IBM Skills Build Intern – AI Automation & Intelligent Solutions</h4>
+                        <p class="experience__institution">Bharat Cares (AICTE) | Jun – July 2026</p>
+                        <ul class="experience__description-list">
+                           <li>Completed an intensive 45-day program focused on agentic AI workflows, API orchestration, and autonomous systems with n8n.</li>
+                           <li>Built and deployed a full-stack healthcare triage assistant as the capstone deliverable, connecting front-end UI to backend AI agents.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="experience__content">
+               <h3 class="experience__subtitle"><i class="ri-graduation-cap-line"></i> Education</h3>
+               <div class="experience__list grid">
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">B.E. in Computer Engineering</h4>
+                        <p class="experience__institution">Sardar Vallabhbhai Patel Institute of Technology (SVIT) | 2023–2027</p>
                         <span class="experience__grade">CGPA: 9.17</span>
                      </div>
                   </div>
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">12th PCM</h4>
-                        <p class="experience__institution">Phoenix School | Percentile: 84</p>
+                        <h4 class="experience__title">Higher Secondary (12th PCM)</h4>
+                        <p class="experience__institution">Phoenix School</p>
+                        <span class="experience__grade">84 Percentile (67.66%)</span>
                      </div>
                   </div>
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">10th Standard</h4>
-                        <p class="experience__institution">Phoenix School | Percentile: 98.5</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="experience__content">
-               <h3 class="experience__subtitle">Achievements</h3>
-               <div class="experience__list grid">
-                  <div class="experience__item">
-                     <div class="experience__circle"></div>
-                     <div class="experience__data">
-                        <h4 class="experience__title">Runner-Up - SIH</h4>
-                        <p class="experience__description">Smart India Hackathon (National Level)</p>
-                     </div>
-                  </div>
-                  <div class="experience__item">
-                     <div class="experience__circle"></div>
-                     <div class="experience__data">
-                        <h4 class="experience__title">Robofest 5.0 Finalist</h4>
-                        <p class="experience__description">Top 13 Teams in India - Robotics Competition</p>
+                        <h4 class="experience__title">Secondary School (10th)</h4>
+                        <p class="experience__institution">Phoenix School</p>
+                        <span class="experience__grade">98.5 Percentile (91.66%)</span>
                      </div>
                   </div>
                </div>
             </div>
          </div>
 
-         <div class="experience__container container grid" style="margin-top: 4rem;">
+         <!-- Block 2: Achievements & Certifications -->
+         <div class="experience__container container grid" style="margin-top: 3.5rem;">
             <div class="experience__content">
-               <h3 class="experience__subtitle">Certifications</h3>
+               <h3 class="experience__subtitle"><i class="ri-trophy-line"></i> Achievements & Competitions</h3>
                <div class="experience__list grid">
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">Data Structure & Algorithms</h4>
-                        <p class="experience__description">Udemy C++ Masterclass</p>
+                        <h4 class="experience__title">National Runner-Up – Smart India Hackathon (SIH)</h4>
+                        <p class="experience__description">
+                           Trained a real-time computer vision classifier with MediaPipe and TensorFlow on 25,000 images of classical dance hand mudras, reaching 90% accuracy with a live Flask video stream.
+                        </p>
                      </div>
                   </div>
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">Python Programming</h4>
-                        <p class="experience__description">BITS Advanced Python Programming</p>
+                        <h4 class="experience__title">Grand Finale Finalist – Robofest 5.0</h4>
+                        <p class="experience__description">
+                           Designed and field-tested an autonomous water surface cleaning robot equipped with conveyor belts and motor controllers to collect floating waste from lakes and reservoirs.
+                        </p>
                      </div>
                   </div>
                   <div class="experience__item">
                      <div class="experience__circle"></div>
                      <div class="experience__data">
-                        <h4 class="experience__title">Cloud Computing</h4>
-                        <p class="experience__description">NPTEL / Top Technologies Certification</p>
+                        <h4 class="experience__title">Odoo Hackathon Finalist</h4>
+                        <p class="experience__description">
+                           Designed a café POS system featuring automated live tracking from chef to customer and dynamic multi-item bill payment workflows.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="experience__content">
+               <h3 class="experience__subtitle"><i class="ri-award-line"></i> Certifications</h3>
+               <div class="experience__list grid">
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">BITS Python Programming</h4>
+                        <p class="experience__institution">BITS Pilani Advanced Python Certification</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Tops Cloud Computing</h4>
+                        <p class="experience__institution">Cloud Infrastructure & Computing Certification</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Green Skill Python Certificate</h4>
+                        <p class="experience__institution">Sustainable Computing & Python Architecture</p>
+                     </div>
+                  </div>
+                  <div class="experience__item">
+                     <div class="experience__circle"></div>
+                     <div class="experience__data">
+                        <h4 class="experience__title">Udemy C++ Certificate</h4>
+                        <p class="experience__institution">Data Structures & Algorithms Masterclass</p>
                      </div>
                   </div>
                </div>
@@ -324,20 +381,20 @@
             <div class="contact__data">
                <h2 class="section__title">Let's <span>Talk</span></h2>
                <p class="contact__description">
-                  I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                  I'm always open to discussing new projects, AI research opportunities, hackathons, or software engineering roles.
                </p>
 
                <div class="contact__info grid">
                   <div class="contact__card">
                      <i class="ri-mail-line"></i>
                      <h3 class="contact__card-title">Email</h3>
-                     <p class="contact__card-data">umangpatel2415@gmail.com</p>
+                     <p class="contact__card-data"><a href="mailto:umangpatel2415@gmail.com" style="color: inherit;">umangpatel2415@gmail.com</a></p>
                   </div>
 
                   <div class="contact__card">
                      <i class="ri-phone-line"></i>
                      <h3 class="contact__card-title">Phone</h3>
-                     <p class="contact__card-data">+91 7574885744</p>
+                     <p class="contact__card-data"><a href="tel:+917574885744" style="color: inherit;">+91 7574885744</a></p>
                   </div>
 
                   <div class="contact__card">
@@ -348,17 +405,46 @@
                </div>
             </div>
 
-            <form action="" class="contact__form grid">
+            <form id="contact-form" action="https://formsubmit.co/umangpatel2415@gmail.com" method="POST" class="contact__form grid">
+               <!-- FormSubmit Configuration -->
+               <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_template" value="table">
+               <input type="hidden" name="_subject" value="New Portfolio Message - Umang Patel">
+
                <div class="contact__group">
-                  <input type="text" placeholder="Name" class="contact__input">
-                  <input type="email" placeholder="Email" class="contact__input">
+                  <input type="text" name="name" id="contact-name" placeholder="Name" class="contact__input" required autocomplete="name">
+                  <input type="email" name="email" id="contact-email" placeholder="Email" class="contact__input" required autocomplete="email">
                </div>
-               <textarea placeholder="Message" class="contact__input contact__area"></textarea>
-               <button class="button">Send Message</button>
+               <textarea name="message" id="contact-message" placeholder="Message" class="contact__input contact__area" required></textarea>
+               <button type="submit" id="contact-submit-btn" class="button contact__button">
+                  <span>Send Message</span>
+                  <i class="ri-send-plane-fill"></i>
+               </button>
             </form>
          </div>
       </section>
    </main>
+
+   <!--==================== CONTACT SUCCESS/FEEDBACK MODAL ====================-->
+   <div class="contact-modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <div class="contact-modal__overlay" id="contact-modal-overlay"></div>
+      <div class="contact-modal__content">
+         <div class="contact-modal__close" id="contact-modal-close" aria-label="Close modal">
+            <i class="ri-close-line"></i>
+         </div>
+
+         <div class="contact-modal__icon" id="contact-modal-icon">
+            <i class="ri-checkbox-circle-fill"></i>
+         </div>
+
+         <h3 class="contact-modal__title" id="contact-modal-title">Message Sent Successfully!</h3>
+         <p class="contact-modal__text" id="contact-modal-text">
+            Thank you for reaching out! Your message has been sent to Umang Patel. I'll get back to you as soon as possible.
+         </p>
+
+         <button type="button" class="button contact-modal__button" id="contact-modal-btn">Got it</button>
+      </div>
+   </div>
 
    <!--==================== FOOTER ====================-->
    <footer class="footer">
@@ -366,17 +452,18 @@
          <div class="footer__content">
             <a href="#" class="footer__logo">Umang Patel</a>
             <p class="footer__description">
-               Building the future with AI and Code.
+               AI/ML Developer & Computer Engineer • Building practical computer vision, agentic AI workflows, and full-stack tools.
             </p>
          </div>
 
          <div class="footer__social">
-            <a href="https://github.com/umang1506" target="_blank" class="footer__social-link"><i class="ri-github-fill"></i></a>
-            <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/umang1506" target="_blank" class="footer__social-link" title="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/umang-patel-4b9887289" target="_blank" class="footer__social-link" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="mailto:umangpatel2415@gmail.com" class="footer__social-link" title="Email"><i class="ri-mail-fill"></i></a>
          </div>
 
          <p class="footer__copy">
-            &#169; 2025 Umang Patel. All Rights Reserved.
+            &#169; 2026 Umang Patel. All Rights Reserved.
          </p>
       </div>
    </footer>
@@ -393,8 +480,11 @@
    <!--=============== ROBOFEST PDF ===============-->
    <script src="assets/js/robofest-pdf.js"></script>
 
+   <!--=============== RESUME PDF ===============-->
+   <script src="assets/js/resume-pdf.js"></script>
+
    <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
 
 </body>
-</html>
+</html>

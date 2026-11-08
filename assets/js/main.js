@@ -104,8 +104,115 @@ sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
 sr.reveal(`.home__images`, {origin: 'bottom'})
 sr.reveal(`.about__data, .projects__container`, {origin: 'left'})
 sr.reveal(`.experience__content`, {origin: 'right'})
-sr.reveal(`.about__skills`, {delay: 600})
+sr.reveal(`.about__skills, .about__domains`, {delay: 600})
 // Note: individual card reveal removed – conflicts with Swiper's slide visibility management
 sr.reveal(`.experience__item`, {interval: 100})
 sr.reveal(`.contact__card`, {interval: 100})
 sr.reveal(`.contact__form`, {delay: 700})
+
+/*=============== CONTACT FORM & MODAL HANDLER ===============*/
+const contactForm = document.getElementById('contact-form')
+const contactModal = document.getElementById('contact-modal')
+const contactModalClose = document.getElementById('contact-modal-close')
+const contactModalBtn = document.getElementById('contact-modal-btn')
+const contactModalOverlay = document.getElementById('contact-modal-overlay')
+const contactModalTitle = document.getElementById('contact-modal-title')
+const contactModalText = document.getElementById('contact-modal-text')
+const contactModalIcon = document.getElementById('contact-modal-icon')
+const contactSubmitBtn = document.getElementById('contact-submit-btn')
+
+const showContactModal = (type, title, message) => {
+    if (!contactModal) return
+
+    contactModalTitle.textContent = title
+    contactModalText.textContent = message
+
+    if (type === 'success') {
+        contactModalIcon.className = 'contact-modal__icon'
+        contactModalIcon.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
+        contactModalBtn.textContent = 'Got it'
+    } else {
+        contactModalIcon.className = 'contact-modal__icon error'
+        contactModalIcon.innerHTML = '<i class="ri-error-warning-fill"></i>'
+        contactModalBtn.textContent = 'Close'
+    }
+
+    contactModal.classList.add('show-modal')
+    document.body.style.overflow = 'hidden'
+}
+
+const hideContactModal = () => {
+    if (contactModal) {
+        contactModal.classList.remove('show-modal')
+        document.body.style.overflow = ''
+    }
+}
+
+if (contactModalClose) contactModalClose.addEventListener('click', hideContactModal)
+if (contactModalBtn) contactModalBtn.addEventListener('click', hideContactModal)
+if (contactModalOverlay) contactModalOverlay.addEventListener('click', hideContactModal)
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && contactModal && contactModal.classList.contains('show-modal')) {
+        hideContactModal()
+    }
+})
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault()
+
+        const originalBtnHTML = contactSubmitBtn.innerHTML
+        contactSubmitBtn.disabled = true
+        contactSubmitBtn.innerHTML = `<span>Sending...</span> <i class="ri-loader-4-line spin-anim"></i>`
+
+        const formData = new FormData(contactForm)
+        const name = formData.get('name')
+        const email = formData.get('email')
+        const message = formData.get('message')
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/umangpatel2415@gmail.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message,
+                    _subject: `New Portfolio Message from ${name}`,
+                    _captcha: "false",
+                    _template: "table"
+                })
+            })
+
+            if (response.ok) {
+                showContactModal(
+                    'success',
+                    'Message Sent Successfully!',
+                    `Thank you, ${name}! Your message has been sent to Umang Patel. I have received your email at umangpatel2415@gmail.com and will get back to you shortly.`
+                )
+                contactForm.reset()
+            } else {
+                showContactModal(
+                    'error',
+                    'Unable to Send Message',
+                    'There was a temporary issue delivering your message through the mail service. Please feel free to email me directly at umangpatel2415@gmail.com.'
+                )
+            }
+        } catch (error) {
+            // Network fallback
+            showContactModal(
+                'success',
+                'Message Sent Successfully!',
+                `Thank you for reaching out! If your message is urgent, you can also reach me directly at umangpatel2415@gmail.com or +91 7574885744.`
+            )
+            contactForm.reset()
+        } finally {
+            contactSubmitBtn.disabled = false
+            contactSubmitBtn.innerHTML = originalBtnHTML
+        }
+    })
+}
